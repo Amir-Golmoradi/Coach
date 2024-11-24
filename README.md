@@ -44,6 +44,7 @@ The backend of Coach is developed using the following technologies:
 | Hexagonal Architecture     | Promoting separation of concerns for easier maintainability.                              |
 
 ### Mobile
+The mobile application is entirely developed and maintained by the **Persian Flutter** Community:
 
 For mobile app development, we are using:
 
