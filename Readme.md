@@ -50,7 +50,7 @@ submitting pull requests.
 
 ## 📱 Application Overview
 
-This project is designed for a **fitness app** that helps users track their workouts, diet, and get AI-powered
+[here](https://github.com/RahimMahmoudzadeh/Coach), This project is designed for a **fitness app** that helps users track their workouts, diet, and get AI-powered
 recommendations. The app can sync with other fitness platforms for a seamless experience. The backend API is built using
 **Java with Spring Boot**, allowing you to scale the app while providing a secure and smooth experience.
 
@@ -110,10 +110,10 @@ recommendations. The app can sync with other fitness platforms for a seamless ex
 
 | Features           | Admin Panel    | API App        | AI Integration |
 |--------------------|----------------|----------------|----------------|
-| Dashboard          | 🔜 Coming Soon | ✔️ Yes         | 🔜 Coming Soon |
+| Dashboard          | 🔜 Coming Soon | 🔜 Coming Soon | 🔜 Coming Soon |
 | User Management    | ✔️ Done        | ✔️ Yes         | 🔜 Coming Soon |
-| Workout Tracking   | ✔️ Done        | ✔️ Yes         | 🔜 Coming Soon |
-| Diet Tracking      | ✔️ Done        | ✔️ Yes         | 🔜 Coming Soon |
+| Workout Tracking   | 🔜 Coming Soon | 🔜 Coming Soon | 🔜 Coming Soon |
+| Diet Tracking      | 🔜 Coming Soon | 🔜 Coming Soon | 🔜 Coming Soon |
 | AI Recommendations | 🔜 Coming Soon | 🔜 Coming Soon | 🔜 Coming Soon |
 
 ## Run Tests
