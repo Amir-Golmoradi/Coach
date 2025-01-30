@@ -2,7 +2,6 @@
 <div align="center">  
   <image height= "100" width ="100" src="assets/logo.png"></image>
   <br>  
-  <strong>Coach</strong>  
 </div>
 <br>
 
@@ -50,9 +49,7 @@ submitting pull requests.
 
 ## 📱 Application Overview
 
-[here](https://github.com/RahimMahmoudzadeh/Coach), This project is designed for a **fitness app** that helps users track their workouts, diet, and get AI-powered
-recommendations. The app can sync with other fitness platforms for a seamless experience. The backend API is built using
-**Java with Spring Boot**, allowing you to scale the app while providing a secure and smooth experience.
+[here](https://github.com/RahimMahmoudzadeh/Coach), This project is designed for a **fitness app** that helps users track their workouts, diet, and get AI-powered recommendations. The app can sync with other fitness platforms for a seamless experience.
 
 ## Installation Steps
 
