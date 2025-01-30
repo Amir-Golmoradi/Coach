@@ -7,7 +7,7 @@
 </div>
 <br>
 
-![Static Badge](https://img.shields.io/badge/License-GPL--3.0-brightgreen)
+![Static Badge](https://img.shields.io/badge/MIT-License-brightgreen)
 [![Contributions Highly Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/Amir-Golmoradi/Coach/blob/master/CONTRIBUTING.md)
 <img alt="Static Badge" src="https://img.shields.io/badge/GitHub-Amir-Golmoradi%60Z%60?logo=github&color=blue&link=https%3A%2F%2Fgithub.com%2FAmirGolmoradi">
 ![GitHub Repo stars](https://img.shields.io/github/stars/Amir-Golmoradi/Coach)
