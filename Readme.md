@@ -101,11 +101,11 @@ This project is designed for a **fitness app** that helps users track their work
 
 |Features|Admin Panel|API App|AI Integration|
 |---|---|---|---|
-|Dashboard|✔️ Yes|✔️ Yes|✔️ Yes|
-|User Management|✔️ Done|✔️ Yes|❌ No|
-|Workout Tracking|✔️ Done|✔️ Yes|✔️ Yes|
-|Diet Tracking|✔️ Done|✔️ Yes|✔️ Yes|
-|AI Recommendations|🔜 Coming Soon|🔜 Coming Soon|✔️ Yes|
+|Dashboard|🔜 Coming Soon|✔️ Yes|🔜 Coming Soon|
+|User Management|✔️ Done|✔️ Yes|🔜 Coming Soon|
+|Workout Tracking|✔️ Done|✔️ Yes|🔜 Coming Soon|
+|Diet Tracking|✔️ Done|✔️ Yes|🔜 Coming Soon|
+|AI Recommendations|🔜 Coming Soon|🔜 Coming Soon|🔜 Coming Soon|
 
 ## Run Tests
 
