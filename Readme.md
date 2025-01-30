@@ -8,19 +8,18 @@
 <br>
 
 ![Static Badge](https://img.shields.io/badge/License-GPL--3.0-brightgreen)
-[![Contributions Highly Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/RahimMahmoudzadeh/Coach/blob/master/CONTRIBUTING.md)
-<a href="https://android-arsenal.com/api?level=27"><img alt="API" src="https://img.shields.io/badge/API-27%2B-brightgreen.svg?style=flat"/></a>
-<img alt="Static Badge" src="https://img.shields.io/badge/GitHub-RahimMahmoudzadeh-%60Z%60?logo=github&color=blue&link=https%3A%2F%2Fgithub.com%2FRahimMahmoudzadeh">
-![GitHub Repo stars](https://img.shields.io/github/stars/RahimMahmoudzadeh/Coach)
-![GitHub forks](https://img.shields.io/github/forks/RahimMahmoudzadeh/Coach)
-[![Kotlin](https://img.shields.io/badge/Kotlin-2.1.0-blue.svg?style=flat&logo=kotlin)](https://kotlinlang.org)
+[![Contributions Highly Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/Amir-Golmoradi/Coach/blob/master/CONTRIBUTING.md)
+<img alt="Static Badge" src="https://img.shields.io/badge/GitHub-Amir-Golmoradi%60Z%60?logo=github&color=blue&link=https%3A%2F%2Fgithub.com%2FAmirGolmoradi">
+![GitHub Repo stars](https://img.shields.io/github/stars/Amir-Golmoradi/Coach)
+![GitHub forks](https://img.shields.io/github/forks/Amir-Golmoradi/Coach?label=Amir%20Golmoradi)
+![Java](https://img.shields.io/badge/Java-21-blue?logo=openjdk)
 
 ## 📜 Description
 
-Hi! Coach is a comprehensive fitness application designed to provide personalized workout and diet plans using AI-driven
-algorithms.the use of MVI Architecture Pattern And Clean Architecture with Jetpack Compose by following Material-3
-guidelines along with other MAD libraries . The platform ensures robust security, real-time data synchronization, and
-seamless integration across mobile and backend systems.
+Leading a healthy life poses Herculean tasks in the fast-paced world of today. Coach, an artificial intelligence-powered mobile app, seeks to empower individuals towards fitness and health by giving them personalized guidance, useful information, and constant motivation.
+
+COACH is a smart, personalized virtual coach; It seeks to push users to their best possible level of fitness by providing end-to-end training and diet plans. They can simply monitor their exercise,track their diet, and get tailored advice based on their goals, performance,and preferences. Coach will leverage the strength of AI to anticipate future obstacles,discover new avenues for improvement and guide them towards the most daring fitness goals in a healthy, sustainable way.
+
 
 ## 🛠 Technology Stack
 
@@ -42,38 +41,16 @@ seamless integration across mobile and backend systems.
 | **CI/CD**                    | ![GitHub Actions](https://img.shields.io/badge/CI/CD-GitHub_Actions-blue?logo=githubactions)                                                                                                                    | Automate testing and deployment                         |
 | **Containerization**         | ![Docker](https://img.shields.io/badge/Containerization-Docker-blue?logo=docker)                                                                                                                                | Isolated application environment                        |
 
-## 🚀 Features
 
-Loading...
-
-## :iphone: Screenshots
-
-<table style="width:100%">
-  <tr>
-    <th>Splash Screen</th>
-    <th>Home Screen</th>
-    <th>Music Screen</th> 
-    <th>Practice Screen</th> 
-    <th>Activity list Screen</th> 
-  </tr>
-  <tr>
-    <td><img src = "assets/Splash Screen.png" width=240/></td> 
-    <td><img src = "assets/home.png" width=240/></td>
-    <td><img src = "assets/music.png" width=240/></td>
-    <td><img src = "assets/practice.png" width=240/></td>
-    <td><img src = "assets/Activity_list.png" width=240/></td>
-  </tr>
-</table>
-<br>
 
 ## 🤝 Contribution
 
 Contributions are welcome! If you have any feedback or suggestions, please don't hesitate to let us know. We appreciate
 your contributions and support. Also if you find a bug or would like to create a new feature, please submit a pull
-request.Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for
+request. Please read [CONTRIBUTING.md](https://github.com/Amir-Golmoradi/Coach/blob/master/Contributing.md) for details on our [Code of Conduct](https://github.com/Amir-Golmoradi/Coach/blob/master/Code_Of_Conduct.md), and the process for
 submitting pull requests to us.
 
 ## License
 
 This library is licensed under the MIT License.
-See [LICENSE.txt](https://github.com/RahimMahmoudzadeh/Coach/blob/master/LICENSE)
+See [LICENSE](https://github.com/Amir-Golmoradi/Coach/blob/master/License.md)
