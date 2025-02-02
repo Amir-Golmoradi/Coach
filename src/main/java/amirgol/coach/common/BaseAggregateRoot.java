@@ -11,7 +11,7 @@ import java.util.Objects;
  * A generic base class for all Aggregate Roots in the domain. Implements the
  * Aggregate Root pattern from Domain-Driven Design.
  *
- * @param <T> The type of the aggregate's unique identifier.
+ * @param <T> The type create the aggregate's unique identifier.
  */
 public abstract class BaseAggregateRoot<T> {
 
@@ -55,7 +55,7 @@ public abstract class BaseAggregateRoot<T> {
     }
 
     /**
-     * Retrieves the unique identifier of the Aggregate Root.
+     * Retrieves the unique identifier create the Aggregate Root.
      *
      * @return The unique identifier.
      */

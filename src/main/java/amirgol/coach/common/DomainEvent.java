@@ -4,22 +4,20 @@ import java.time.Instant;
 
 public abstract class DomainEvent {
 
-  protected DomainEvent(Instant occurredAt, EventType eventType) {
-    this.eventType = eventType;
-    this.occurredAt = occurredAt;
-  }
+    // When an event is published,
+    private final Instant occurredAt = Instant.now();
+    // What is the message that will be sent to the event store
+    private final String eventMessage;
 
-  // When an event is published,
-  private final Instant occurredAt;
+    protected DomainEvent(String eventMessage) {
+        this.eventMessage = eventMessage;
+    }
 
-  public Instant getOccurredAt() {
-    return occurredAt;
-  }
+    public String getEventMessage() {
+        return eventMessage;
+    }
 
-  // What is the message that will be sent to the event store
-  private final EventType eventType;
-
-  public EventType getEventType() {
-    return eventType;
-  }
+    public Instant getOccurredAt() {
+        return occurredAt;
+    }
 }
