@@ -4,9 +4,9 @@ import amirgol.coach.common.exception.ParticipantBaseException;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
-@ResponseStatus(HttpStatus.NO_CONTENT)
-public class EmptyValueException extends ParticipantBaseException {
-    public EmptyValueException(String message) {
+@ResponseStatus(HttpStatus.BAD_REQUEST)
+public class TooShortValueException extends ParticipantBaseException {
+    public TooShortValueException(String message) {
         super(message);
     }
 }
