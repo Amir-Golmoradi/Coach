@@ -3,7 +3,7 @@ package amirgol.coach.participants.application.service;
 import amirgol.coach.participants.application.dto.ParticipantDTO;
 import amirgol.coach.participants.application.dto.ParticipantEmailUpdateRequest;
 import amirgol.coach.participants.application.dto.ParticipantRegistrationRequest;
-import amirgol.coach.participants.application.dto.mapper.ParticipantUserNameUpdateRequest;
+import amirgol.coach.participants.application.dto.ParticipantUserNameUpdateRequest;
 import amirgol.coach.participants.domain.value_object.Email;
 import amirgol.coach.participants.domain.value_object.UserName;
 import org.springframework.stereotype.Service;

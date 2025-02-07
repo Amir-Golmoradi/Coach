@@ -2,28 +2,27 @@ package amirgol.coach.participants.domain.aggregate;
 
 import amirgol.coach.common.BaseAggregateRoot;
 import amirgol.coach.participants.domain.value_object.Email;
-import amirgol.coach.participants.domain.value_object.FullName;
 import amirgol.coach.participants.domain.value_object.ParticipantId;
+import amirgol.coach.participants.domain.value_object.UserName;
+import lombok.Getter;
 
-/* Coach Security System:
-    Email OTP + Magic Links + OAuth 2.0 (Google, Apple, Facebook)
- */
 
+@Getter
 public class Participant extends BaseAggregateRoot<ParticipantId> {
-    private final FullName name;
+    private final UserName name;
     private final Email email;
 
-    protected Participant(ParticipantId id, FullName name, Email email) {
+    protected Participant(ParticipantId id, UserName name, Email email) {
         super(id);
         this.name = name;
         this.email = email;
     }
 
-    public static Participant of(ParticipantId id, FullName name, Email email) {
+    public static Participant of(ParticipantId id, UserName name, Email email) {
         return new Participant(id, name, email);
     }
 
-    public Participant updateFullName(FullName updatedName) {
+    public Participant updateUserName(UserName updatedName) {
         /*
          * 1. Find the participant who wants to update their name by ID.
          * 2. Update the name of the participant and validate it.
@@ -39,13 +38,6 @@ public class Participant extends BaseAggregateRoot<ParticipantId> {
         return Participant.of(this.getId(), this.name, updatedEmail);
     }
 
-    public Email getEmail() {
-        return email;
-    }
-
-    public FullName getName() {
-        return name;
-    }
 
     @Override
     public int hashCode() {
@@ -72,6 +64,7 @@ public class Participant extends BaseAggregateRoot<ParticipantId> {
             return false;
         if (email == null) {
             return other.email == null;
-        } else return email.equals(other.email);
+        } else
+            return email.equals(other.email);
     }
 }

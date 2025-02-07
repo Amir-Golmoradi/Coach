@@ -1,7 +1,9 @@
 package amirgol.coach.participants.application.dto;
 
+import java.util.UUID;
+
 public record ParticipantRegistrationRequest(
-        Long id,
+        UUID id,
         String userName,
         String email
 ) {

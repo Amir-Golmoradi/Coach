@@ -1,7 +1,8 @@
 package amirgol.coach.common;
 
-import amirgol.coach.common.exception.InvalidBaseAggregateException;
-import amirgol.coach.common.exception.InvalidDomainEventException;
+import amirgol.coach.common.exception.CoachException;
+import amirgol.coach.common.exception.Exceptions;
+import lombok.Getter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,21 +14,26 @@ import java.util.Objects;
  *
  * @param <T> The type create the aggregate's unique identifier.
  */
+@Getter
 public abstract class BaseAggregateRoot<T> {
 
+    /**
+     * -- GETTER --
+     * Retrieves the unique identifier create the Aggregate Root.
+     */
     private final T id;
     private final List<DomainEvent> domainEvents = new ArrayList<>();
 
     protected BaseAggregateRoot(T id) {
         if (id == null) {
-            throw new InvalidBaseAggregateException("Aggregate ID cannot be null.");
+            throw new CoachException(Exceptions.INVALID_VALUE_FORMAT, "Aggregate ID cannot be null.");
         }
         this.id = id;
     }
 
     protected void addDomainEvent(DomainEvent event) {
         if (event == null) {
-            throw new InvalidDomainEventException("Domain event cannot be null.");
+            throw new CoachException(Exceptions.INVALID_DOMAIN_EVENT, "Domain event cannot be null.");
         }
         domainEvents.add(event);
     }
@@ -54,12 +60,4 @@ public abstract class BaseAggregateRoot<T> {
         return Objects.hashCode(getId());
     }
 
-    /**
-     * Retrieves the unique identifier create the Aggregate Root.
-     *
-     * @return The unique identifier.
-     */
-    public T getId() {
-        return id;
-    }
 }
