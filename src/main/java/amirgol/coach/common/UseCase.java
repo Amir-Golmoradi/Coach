@@ -1,14 +1,11 @@
 package amirgol.coach.common;
 
-import amirgol.coach.participants.application.dto.mapper.ParticipantDTOMapper;
 import amirgol.coach.participants.domain.repository.ParticipantRepository;
+import amirgol.coach.participants.shared.mapper.ParticipantMapper;
+import lombok.AllArgsConstructor;
 
+@AllArgsConstructor
 public abstract class UseCase {
-    public final ParticipantDTOMapper mapper;
+    public final ParticipantMapper mapper;
     public final ParticipantRepository participantRepository;
-
-    protected UseCase(ParticipantDTOMapper mapper, ParticipantRepository participantRepository) {
-        this.mapper = mapper;
-        this.participantRepository = participantRepository;
-    }
 }

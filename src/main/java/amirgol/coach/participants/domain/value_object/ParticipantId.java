@@ -1,37 +1,51 @@
 package amirgol.coach.participants.domain.value_object;
 
+import amirgol.coach.common.exception.CoachException;
+import amirgol.coach.common.exception.Exceptions;
+import amirgol.coach.participants.domain.core.ValueObject;
+import lombok.Getter;
+
 import java.util.List;
 import java.util.Objects;
+import java.util.UUID;
 
-import com.github.sviperll.result4j.Result;
-
-import amirgol.coach.participants.domain.core.ValueObject;
-import amirgol.coach.participants.domain.core.exception.ErrorType;
-import amirgol.coach.participants.domain.core.exception.ParticipantException;
-
+@Getter
 public final class ParticipantId extends ValueObject {
-    private final Long id;
+    private final UUID id;
 
-    public ParticipantId(Long id) {
+    public ParticipantId(UUID id) {
+        if (id == null) {
+            throw new IllegalArgumentException("Bad Request! ID must be a non-null UUID.");
+        }
         this.id = id;
     }
 
     /**
      * Factory method to validate and create a ParticipantId.
      *
-     * @param participantId Long value representing the Participant ID.
-     * @return Result containing either a valid ParticipantId or an error message.
+     * @param participantId UUID value representing the Participant ID.
+     * @return A valid ParticipantId.
      */
-    public static Result<ParticipantId, ParticipantException> isValidId(Long participantId) {
-        if (participantId == null || participantId <= 0) {
-            return Result.error(new ParticipantException(
-                    ErrorType.BAD_REQUEST, "Bad Request! ID must be a positive non-null value."));
+    public static ParticipantId of(UUID participantId) {
+        if (participantId == null) {
+            throw new CoachException(Exceptions.INVALID_VALUE_FORMAT, "Bad Request! ID must be a non-null UUID.");
         }
-        return Result.success(new ParticipantId(participantId));
+        return new ParticipantId(participantId);
     }
 
-    public Long getId() {
-        return id;
+    /**
+     * Overloaded factory method to create a ParticipantId from a String representation.
+     *
+     * @param idAsString String representation of the UUID.
+     * @return A valid ParticipantId.
+     */
+    public static ParticipantId fromString(String idAsString) {
+        try {
+            UUID uuid = UUID.fromString(idAsString);
+            return new ParticipantId(uuid);
+        } catch (CoachException ex) {
+            throw new CoachException(Exceptions.INVALID_VALUE_FORMAT, "Bad Request! Invalid UUID format: " + idAsString);
+        }
     }
 
     @Override

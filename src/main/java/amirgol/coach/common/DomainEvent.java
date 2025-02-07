@@ -1,7 +1,10 @@
 package amirgol.coach.common;
 
+import lombok.Getter;
+
 import java.time.Instant;
 
+@Getter
 public abstract class DomainEvent {
 
     // When an event is published,
@@ -13,11 +16,4 @@ public abstract class DomainEvent {
         this.eventMessage = eventMessage;
     }
 
-    public String getEventMessage() {
-        return eventMessage;
-    }
-
-    public Instant getOccurredAt() {
-        return occurredAt;
-    }
 }

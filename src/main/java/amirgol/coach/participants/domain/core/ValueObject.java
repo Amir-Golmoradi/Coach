@@ -1,7 +1,7 @@
 package amirgol.coach.participants.domain.core;
 
-import amirgol.coach.participants.domain.core.exception.ErrorType;
-import amirgol.coach.participants.domain.core.exception.ParticipantException;
+import amirgol.coach.common.exception.CoachException;
+import amirgol.coach.common.exception.Exceptions;
 
 import java.util.List;
 
@@ -16,7 +16,7 @@ import java.util.List;
  * argument is a {@link ValueObject} and if it is of the same class as
  * this object.
  * <p>
- * If the argument is not a ValueObject or it is of a different class,
+ * If the argument is not a ValueObject, or it is of a different class,
  * this method will return false.
  * <p>
  * This method is final and cannot be overridden.
@@ -30,7 +30,8 @@ public abstract class ValueObject {
 
         // Checks for Immutability equality between two components.
         if (components.stream().anyMatch(component -> !isImmutable(component))) {
-            throw new ParticipantException(ErrorType.BAD_REQUEST, "All equality components must be immutable.");
+            throw new CoachException(Exceptions.INVALID_VALUE_FORMAT, "All equality components must be immutable.");
+
         }
     }
 
