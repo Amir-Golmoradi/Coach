@@ -1,6 +1,6 @@
 package amirgol.coach.participants.shared.mapper;
 
-import amirgol.coach.participants.application.dto.ParticipantDTO;
+import amirgol.coach.participants.shared.dto.ParticipantDTO;
 import amirgol.coach.participants.domain.aggregate.Participant;
 import amirgol.coach.participants.infrastructure.persistence.tables.ParticipantTable;
 import org.mapstruct.Mapper;
