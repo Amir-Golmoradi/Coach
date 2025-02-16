@@ -1,4 +1,4 @@
-package amirgol.coach.participants.application.dto;
+package amirgol.coach.participants.shared.dto;
 
 import java.util.UUID;
 

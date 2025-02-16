@@ -1,4 +1,4 @@
-package amirgol.coach.participants.application.dto;
+package amirgol.coach.participants.shared.dto;
 
 public record ParticipantEmailUpdateRequest(
         String currentEmail,

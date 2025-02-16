@@ -1,4 +1,4 @@
-package amirgol.coach.participants.application.dto;
+package amirgol.coach.participants.shared.dto;
 
 /**
  * Data Transfer Object (DTO) for a participant.
